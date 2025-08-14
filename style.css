@@ -32,6 +32,8 @@ body {
     height: 100vh;
     display: none;
     border-radius: 20px;
+    padding:10px;
+    color: antiquewhite;
     
 }
 
