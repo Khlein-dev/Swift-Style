@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    width: 200px;
+    width: auto;
     height: 100vh;
     left: 0;
     position: fixed;
@@ -19,5 +19,22 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1a001f;
+    background: linear-gradient(to bottom, #2d032a, #2b022b, #10010f);
+    transition: 1000ms ease-in-out;
+}
+
+.navi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(to bottom, #180f17, #160d16, #000000);
+    width: 300px;
+    height: 100vh;
+    display: none;
+    border-radius: 20px;
+    
+}
+
+.navbar:hover .navi {
+    display: block;
 }
