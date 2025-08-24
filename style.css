@@ -9,6 +9,9 @@ body {
     background-color: #0d181f;
 }
 
+a {
+    text-decoration: none;
+}
 .navbar {
     width: 70px;
     height: 100vh;
@@ -20,15 +23,21 @@ body {
     align-items: center;
     gap: 15px;
     padding: 20px;
-    background: linear-gradient(to bottom, #e46f21, #c25913, #953705, #572104);
+    background: linear-gradient(to bottom, #e46f21 5%, #c25913, #953705, #572104 );
     transition: 1000ms ease-in-out;
     font-size: 12px;
     color: #0d181f;
+    z-index: 1;
 }
 
 .navbar img {
     width: 30px;
     height: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar img:hover{
+    transform: translateY(-8px);
 }
 
 .navbar span {
@@ -37,8 +46,33 @@ body {
 
 .navbarContent {
     position: absolute;
-    width: 70px;
+    width: 260px;
     height: 100vh;
-    left: 0;
+    left: -250px; 
     top: 0;
+    background: linear-gradient(to bottom, #0e1a22, #091217, #030709 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+    transition:  0.3s ease-in-out; 
+    padding: 10px;
+    gap: 10px;
 }
+
+.option {
+    width: 240px;
+    height: 30px;
+    background-color: #0e1920;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 18px;
+    font-size: 17px;
+    color: antiquewhite;
+    transition: 200ms ease-in-out;
+}
+.option:hover {
+    background-color: #14232d;
+}
+
+
