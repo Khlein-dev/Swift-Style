@@ -20,7 +20,7 @@ body {
     align-items: center;
     gap: 15px;
     padding: 20px;
-    background: linear-gradient(to bottom,#fe7f2d, #c25913, #953705);
+    background: linear-gradient(to bottom, #e46f21, #c25913, #953705, #572104);
     transition: 1000ms ease-in-out;
     font-size: 12px;
     color: #0d181f;
@@ -33,4 +33,12 @@ body {
 
 .navbar span {
     transform: translateY(-15px);
+}
+
+.navbarContent {
+    position: absolute;
+    width: 70px;
+    height: 100vh;
+    left: 0;
+    top: 0;
 }
